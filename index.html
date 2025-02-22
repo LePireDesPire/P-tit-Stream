@@ -4,26 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P'tit Stream</title>
-    <!-- Police Atkinson Hyperlegible -->
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
-    <!-- Style CSS -->
     <style>
-        /* Reset CSS */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Style général */
         body {
-            font-family: 'Atkinson Hyperlegible', monospace; /* Nouvelle police */
+            font-family: 'Atkinson Hyperlegible', monospace;
             background-color: #1e1e1e;
             color: #fff;
             line-height: 1.6;
         }
 
-        /* En-tête */
         header {
             background-color: #111;
             padding: 20px;
@@ -33,10 +28,9 @@
 
         header h1 {
             font-size: 2.5rem;
-            color: #b5179e; /* Nouvelle couleur principale */
+            color: #b5179e;
         }
 
-        /* Barre de recherche */
         .search-bar {
             margin: 20px auto;
             text-align: center;
@@ -48,7 +42,7 @@
             border: none;
             border-radius: 5px;
             font-size: 1rem;
-            font-family: 'Atkinson Hyperlegible', monospace; /* Nouvelle police */
+            font-family: 'Atkinson Hyperlegible', monospace;
         }
 
         .search-bar button {
@@ -58,7 +52,7 @@
             border-radius: 5px;
             color: #fff;
             font-size: 1rem;
-            font-family: 'Atkinson Hyperlegible', monospace; /* Nouvelle police */
+            font-family: 'Atkinson Hyperlegible', monospace;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
@@ -67,14 +61,12 @@
             background-color: #8e126e;
         }
 
-        /* Conteneur principal */
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 0 20px;
         }
 
-        /* Section films */
         .films {
             display: flex;
             flex-wrap: wrap;
@@ -82,7 +74,6 @@
             justify-content: center;
         }
 
-        /* Carte film */
         .film-card {
             background-color: #222;
             border-radius: 10px;
@@ -98,8 +89,8 @@
 
         .film-card img {
             width: 100%;
-            height: 450px; /* Hauteur fixe pour les images */
-            object-fit: cover; /* Redimensionne l'image pour couvrir la zone */
+            height: 450px;
+            object-fit: cover;
             display: block;
         }
 
@@ -124,7 +115,6 @@
             background-color: #8e126e;
         }
 
-        /* Pied de page */
         footer {
             background-color: #111;
             padding: 10px;
@@ -139,35 +129,44 @@
     </style>
 </head>
 <body>
-    <!-- En-tête -->
     <header>
         <h1>P'tit Stream</h1>
     </header>
 
-    <!-- Barre de recherche -->
     <div class="search-bar">
         <input type="text" id="searchInput" placeholder="Rechercher un film...">
         <button onclick="searchFilms()">Rechercher</button>
     </div>
 
-    <!-- Conteneur principal -->
     <div class="container">
-        <!-- Section films -->
         <section class="films" id="films">
-            <!-- Carte film : Batman Begins -->
+            <!-- Lupin S1 -->
             <div class="film-card">
-                <img src="https://fr.web.img3.acsta.net/pictures/22/10/04/08/52/2484953.jpg" alt="Batman Begins">
-                <h2>Batman Begins (2005)</h2>
+                <img src="https://fr.web.img6.acsta.net/pictures/20/12/02/16/24/1535547.jpg" alt="Lupin">
+                <h2>Lupin - S01E01</h2>
                 <a href="https://mega.nz/embed/fyowTADQ#aKi2pWERvL75cQptWvJZAC40t84wlm1OcHu77_mlUck" target="_blank">Regarder</a>
             </div>
-
             <div class="film-card">
-              <img src="https://cdn.discordapp.com/attachments/1334257323035594803/1339351395526119505/image.png?ex=67baedf0&is=67b99c70&hm=10856870efa39eccb4094c7a883afea557b7cb86d717e7a090fa7d8ae5c92c94&" alt="Cyka Test">
-              <h2>Cyka Test</h2>
-              <a href="https://mega.nz/embed/vmAiHLoZ#scFFiPyqd6QDhCyJy_9ZQdLV6J39qzM_NHN4gXgunis" target="_blank">Regarder</a>
+              <img src="https://fr.web.img6.acsta.net/pictures/20/12/02/16/24/1535547.jpg" alt="Lupin">
+              <h2>Lupin - S01E02</h2>
+              <a href="https://mega.nz/embed/fyowTADQ#aKi2pWERvL75cQptWvJZAC40t84wlm1OcHu77_mlUck" target="_blank">Regarder</a>
           </div>
+          <div class="film-card">
+            <img src="https://fr.web.img6.acsta.net/pictures/20/12/02/16/24/1535547.jpg" alt="Lupin">
+            <h2>Lupin - S01E03</h2>
+            <a href="https://mega.nz/embed/fyowTADQ#aKi2pWERvL75cQptWvJZAC40t84wlm1OcHu77_mlUck" target="_blank">Regarder</a>
+        </div>
+        <div class="film-card">
+          <img src="https://fr.web.img6.acsta.net/pictures/20/12/02/16/24/1535547.jpg" alt="Lupin">
+          <h2>Lupin - S01E04</h2>
+          <a href="https://mega.nz/embed/fyowTADQ#aKi2pWERvL75cQptWvJZAC40t84wlm1OcHu77_mlUck" target="_blank">Regarder</a>
+      </div>
+      <div class="film-card">
+        <img src="https://fr.web.img6.acsta.net/pictures/20/12/02/16/24/1535547.jpg" alt="Lupin">
+        <h2>Lupin - S01E05</h2>
+        <a href="https://mega.nz/embed/fyowTADQ#aKi2pWERvL75cQptWvJZAC40t84wlm1OcHu77_mlUck" target="_blank">Regarder</a>
+    </div>
 
-            <!-- Ajoutez d'autres films ici -->
             <!-- Exemple de nouveau film :
             <div class="film-card">
                 <img src="https://via.placeholder.com/300x450" alt="Nom du film">
@@ -178,12 +177,10 @@
         </section>
     </div>
 
-    <!-- Pied de page -->
     <footer>
-        <p>&copy; 2025 P'tit Stream.MK Tous droits réservés.</p>
+        <p>&copy; 2025 P'tit Stream MK. Tous droits réservés.</p>
     </footer>
 
-    <!-- Script pour la barre de recherche -->
     <script>
         function searchFilms() {
             const input = document.getElementById('searchInput').value.toLowerCase();
